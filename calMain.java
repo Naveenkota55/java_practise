@@ -26,7 +26,7 @@ public class calMain {
                             System.out.println(Variables1.calDiv());}
                         
                     } else { onRepeat=false;}
-                } else if(userInput2.toUpperCase().equals("N")) {
+                }else if(userInput2.toUpperCase().equals("Y")) {
                     System.out.println("Enter the first value:");
                     int userInput3= input.nextInt();
                     System.out.println("Enter the Second value:");
@@ -34,9 +34,8 @@ public class calMain {
 
                     if ((userInput1==4) & ((userInput3==0) | (userInput4==0))){
                         System.out.println("Invalid input!, make sure neither values are equal to zero for division");
-                    }
-                    else {
-                        Calculator Variables2= new Calculator(userInput3, userInput4);
+                    
+                    }else {  Calculator Variables2= new Calculator(userInput3, userInput4);
                         if (userInput1==1){
                             System.out.println(Variables2.calAdd());}
                         else if (userInput1==2){
@@ -50,22 +49,21 @@ public class calMain {
                     System.out.println("Invalid Selection!");
                     Count=Count-1;
                     if (Count==0){
-                        Count1=true;
-                }
-            } else if ((userInput1==5) | (Count1==true)){
+                        Count1=true;}}
+            
+            }else if ((userInput1==5) | (Count1==true)){
                 System.out.println("Closing Application!");
                 onRepeat=false;
-                input.close();
-            }
+                input.close();}
+            
             else {
                 System.out.println("Invalid Selection!");
                 Count=Count-1;
                 if (Count==0){
-                    Count1=true;
-                }
+                    Count1=true;}
             }
+            
         }
 
     }
-    
-    }
+}
