@@ -9,8 +9,5 @@ public class if_again {
         } else {
             System.out.println("you choose number greater than 5");
         }
-
-
-
     }
 }
